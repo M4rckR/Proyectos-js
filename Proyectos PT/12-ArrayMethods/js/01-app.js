@@ -8,3 +8,11 @@ const carrito = [
     { nombre: 'Teclado', precio: 400 },
     { nombre: 'Celular', precio: 700 },
 ]
+
+const existe = carrito.some(producto => {
+    return producto.nombre == "Tablet"
+}) 
+console.log(existe);
+
+let resultado = carrito.reduce((total, producto)=> total + producto.precio, 0)
+console.log(resultado);
