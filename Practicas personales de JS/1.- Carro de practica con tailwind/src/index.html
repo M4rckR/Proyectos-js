@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica de carrito</title>
+    <link rel="stylesheet" href="css/output.css">
+</head>
+<body>
+    
+    <main class="container m-w-[90%] mx-auto grid min-h-[100vh] bg-slate-400 grid-cols-2">
+        <div class="my-10 bg-slate-300 flex items-center">
+            <section id="lista-postres" class="grid grid-cols-3 gap-4 px-4">
+                <article class="bg-slate-100 rounded-2xl">
+                    <div>
+                        <img class="block rounded-t-lg" src="https://cdn.pixabay.com/photo/2015/05/07/15/08/cookie-756601_1280.jpg" alt="imagen postre">
+                    </div>
+                    <div class="py-2 px-4">
+                        <h3 class="text-3xl font-bold">Galleta</h3>
+                        <p  class="precio">S/0.50</p>
+                        <a class="agregar-producto block p-4 bg-green-800 border border-black text-white text-center rounded mt-2 font-bold" data-id="1"  href="#">Añadir al carrito</a>
+                    </div>
+                    
+                </article>
+                <article class="bg-slate-100 rounded-2xl">
+                    <div>
+                        <img class="block rounded-t-lg" src="https://cdn.pixabay.com/photo/2016/11/21/15/53/berries-1846085_1280.jpg" alt="imagen postre">
+                    </div>
+                    <div class="py-2 px-4">
+                        <h3 class="text-3xl font-bold">Yogurt</h3>
+                        <p class="precio">S/20</p>
+                        <a class="agregar-producto block p-4 bg-green-800 border border-black text-white text-center rounded mt-2 font-bold" data-id="2" href="#">Añadir al carrito</a>
+                    </div>
+                    
+                </article>
+                <article class="bg-slate-100 rounded-2xl">
+                    <div>
+                        <img class="block rounded-t-lg" src="https://cdn.pixabay.com/photo/2016/06/08/19/46/cereal-1444495_1280.jpg" alt="imagen postre">
+                    </div>
+                    <div class="py-2 px-4">
+                        <h3 class="text-3xl font-bold">Cereal</h3>
+                        <p class="precio">S/2.00</p>
+                        <a class="agregar-producto block p-4 bg-green-800 border border-black text-white text-center rounded mt-2 font-bold" data-id="3" href="#">Añadir al carrito</a>
+                    </div>
+                    
+                </article>
+                <article class="bg-slate-100 rounded-2xl">
+                    <div>
+                        <img class="block rounded-t-lg" src="https://cdn.pixabay.com/photo/2015/06/27/16/35/honey-823614_1280.jpg" alt="imagen postre">
+                    </div>
+                    <div class="py-2 px-4">
+                        <h3 class="text-3xl font-bold">Miel</h3>
+                        <p class="precio">S/60.00</p>
+                        <a class="agregar-producto block p-4 bg-green-800 border border-black text-white text-center rounded mt-2 font-bold" data-id="4" href="#">Añadir al carrito</a>
+                    </div>
+                    
+                </article>
+                <article class="bg-slate-100 rounded-2xl">
+                    <div>
+                        <img class="block rounded-t-lg" src="https://cdn.pixabay.com/photo/2017/01/11/11/33/cake-1971552_1280.jpg" alt="imagen postre">
+                    </div>
+                    <div class="py-2 px-4">
+                        <h3 class="text-3xl font-bold">Pastel</h3>
+                        <p class="precio">S/4.50</p>
+                        <a class="agregar-producto block p-4 bg-green-800 border border-black text-white text-center rounded mt-2 font-bold" data-id="5" href="#">Añadir al carrito</a>
+                    </div>
+                    
+                </article>
+                <article class="bg-slate-100 rounded-2xl">
+                    <div>
+                        <img class="block rounded-t-lg" src="https://cdn.pixabay.com/photo/2017/05/12/08/29/coffee-2306471_1280.jpg" alt="imagen postre">
+                    </div>
+                    <div class="py-2 px-4">
+                        <h3 class="text-3xl font-bold">Cafe</h3>
+                        <p class="precio">S/10.60</p>
+                        <a class="agregar-producto block p-4 bg-green-800 border border-black text-white text-center rounded mt-2 font-bold" data-id="6" href="#">Añadir al carrito</a>
+                    </div>
+                    
+                </article>
+            </section>
+        </div>
+        <div class="my-10 bg-white pt-5 pl-10">
+            <table id="carrito" class="table-auto">
+                <thead>
+                    <tr class="bg-slate-200">
+                        <th class="p-4 ">Imagen</th>
+                        <th class="p-4">Nombre</th>
+                        <th class="p-4">Precio</th>
+                        <th class="p-4">Cantidad</th>
+                        <th class="p-4">Sub-total</th>
+                        <th class="p-4"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                    </tr>
+                </tbody>
+
+                <tfoot id="pie-carrito">
+                    <tr>
+                        <td class="bg-slate-200 text-center font-bold" colspan="3">Precio total</td>
+                        <td id="precio-total" class="bg-white text-center font-bold" colspan="2"></td>
+                    </tr>
+                </tfoot>
+            </table>
+            <a id="vaciar-carrito" class="inline-block text-center bg-sky-700 p-2 rounded text-white mt-2" href="#">Vaciar Carrito</a>
+        </div>
+    </main>
+    
+    <script src="js/app.js"></script>
+</body>
+</html>
