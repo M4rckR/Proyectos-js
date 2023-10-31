@@ -1,0 +1,84 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+.main {
+    background-color: v.$bg-light;
+    &__box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 4rem 0;
+    }
+
+    &__icono {
+        font-size: 3.8rem;
+    }
+
+}
+
+.menu {
+    padding: 2rem 0 4rem 0;
+    @include m.tablet {
+        @include m.grid(2,2rem);
+    }
+
+    @include m.desktop {
+        @include m.grid(3,2rem);
+    }
+
+    &__imagen {
+        padding: 0 2rem 1rem 2rem;
+        // aspect-ratio: 4/3;
+        // max-width: 33rem;
+        background-size: cover;
+        height: 20rem;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    &__description {
+        display: flex;
+        gap: .5rem;
+    }
+
+    &__line {
+        height: auto;
+        width: .4rem;
+        background-color: orange;
+    }
+
+    &__name, &__paragraph {
+        margin: 0;
+        font-weight: 800;
+    }
+
+    &__paragraph {
+        font-weight: 400;
+    }
+
+    &__text {
+        background-color: v.$gris-claro;
+        border-bottom: 4px solid orange;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+    }
+
+    &__text a, &__text p {
+        margin: 0;
+        color: v.$bg-gris;
+        font-weight: 600;
+        font-size: 2rem;
+    }
+
+    &__text a {
+        background-color: v.$bg-gris;
+        padding: 1rem 2rem;
+        border-radius: 1.4rem;
+        font-size: 1.6rem;
+        color: v.$gris-claro;
+    }
+
+
+}
