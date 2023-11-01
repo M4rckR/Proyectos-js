@@ -1,0 +1,59 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+
+.carro {
+    margin-bottom: 4rem;
+    background-color: v.$gris-claro;
+    padding: 2.4rem 3rem;
+    min-height: 20rem;
+    color: v.$bg-gris;
+
+    @include m.desktop {
+        margin-bottom: 0;
+        flex: 1;
+    }
+
+    &__cabecera {
+        display: flex;    
+        p {
+            margin-top: 0;
+            font-weight: 800;
+        }
+    }
+
+    &__item {
+        flex: 2;
+    }
+
+    &__cantidad,
+    &__precio{ 
+        text-align: end;
+        flex: 1;
+    }
+
+    &__total {
+        display: flex;
+        gap: 2rem;
+    }
+
+    &__contenido {
+        padding: 4rem 0;
+    }
+
+    &__line {
+        height: 1px;
+        background-color: v.$bg-gris;
+
+    }
+
+
+
+
+    &__money {
+        flex: 2;
+        text-align: end;
+        font-weight: 800;
+    }
+
+}

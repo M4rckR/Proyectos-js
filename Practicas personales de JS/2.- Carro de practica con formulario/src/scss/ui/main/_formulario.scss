@@ -1,0 +1,37 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+
+    input {
+        border: none;
+        outline: none;
+        padding: 1rem;
+    }
+
+    @include m.desktop {
+        flex: 1;
+    }
+    &__label {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2rem;
+    }
+
+    button {
+        width: 100%;
+        padding: 1rem;
+        background-color: v.$bg-light;
+        border: 1px solid white;
+        color: white;
+        cursor: pointer;
+        transition: background-color .3s;
+
+
+        &:hover {
+            background-color: darken($color: v.$bg-light, $amount: 15%)
+        }
+    }
+}
