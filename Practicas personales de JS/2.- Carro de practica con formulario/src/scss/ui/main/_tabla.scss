@@ -23,7 +23,7 @@
     }
 
     &__item {
-        flex: 2;
+        flex: 3;
     }
 
     &__cantidad,
@@ -38,17 +38,19 @@
     }
 
     &__contenido {
-        padding: 4rem 0;
+        // padding: 4rem 0;
+    }
+
+    &__descripcion {
+        p {
+            margin: 0;
+        }
     }
 
     &__line {
         height: 1px;
         background-color: v.$bg-gris;
-
     }
-
-
-
 
     &__money {
         flex: 2;
@@ -56,4 +58,58 @@
         font-weight: 800;
     }
 
+    &__producto {
+        display: flex;
+        align-items: center;
+    }
+
+    &__itemC {
+        flex: 3;
+        display: flex;
+        align-items: center;
+        gap: 1.6rem;
+    }
+
+    &__cantidadC {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        i{
+            font-size: 2.4rem;
+            cursor: pointer;
+        }
+
+        #cantidad {
+            padding: 1rem;
+            background-color: white;
+            border: 1px solid black;
+        }
+    }
+
+    &__cantidadC, &__precioC {
+        flex: 1;
+        text-align: end;
+    }
+
+    &__imagen {
+        background-image: url('../img/plato1.webp');
+        width: 8rem;
+        height: 8rem;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        a {
+            position: absolute;
+            right: .25rem;
+            top: .25rem;
+            i {
+                // font-weight: 900;
+                font-size: 2.4rem;
+                color: black;
+                background-color: white;
+                border-radius: 50%;           
+            }
+        }
+    }
 }
