@@ -34,7 +34,12 @@
 
     &__total {
         display: flex;
+        align-items: center;
         gap: 2rem;
+        a{ 
+            background-color: v.$bg-gris;
+            padding: 1rem 2rem;
+        }
     }
 
     &__contenido {
@@ -53,7 +58,7 @@
     }
 
     &__money {
-        flex: 2;
+        flex: 1;
         text-align: end;
         font-weight: 800;
     }
@@ -68,6 +73,14 @@
         display: flex;
         align-items: center;
         gap: 1.6rem;
+    }
+
+    &__imagen{
+        flex: 1;
+    }
+    
+    &__descripcion {
+        flex: 2;
     }
 
     &__cantidadC {
@@ -93,7 +106,7 @@
     }
 
     &__imagen {
-        background-image: url('../img/plato1.webp');
+        // background-image: url('http://127.0.0.7:5500/build/img/plato3.jpeg');
         width: 8rem;
         height: 8rem;
         background-size: cover;

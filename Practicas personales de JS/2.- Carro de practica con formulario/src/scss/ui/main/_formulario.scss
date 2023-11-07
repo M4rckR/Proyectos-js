@@ -34,4 +34,18 @@
             background-color: darken($color: v.$bg-light, $amount: 15%)
         }
     }
+
+    &__botones {
+        display: flex;
+        gap: 2rem;
+    }
+    
+    
+}
+
+.error {
+    background-color: rgb(102, 33, 33);
+    padding: 1rem;
+    text-align: center;
+    font-weight: bold;
 }

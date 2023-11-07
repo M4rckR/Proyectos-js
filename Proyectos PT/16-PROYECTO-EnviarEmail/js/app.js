@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function(){
+    document.addEventListener("DOMContentLoaded", function(){
 
     const email = {
         email: '',
@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function(){
     inputAsunto.addEventListener('input', validar);
     inputMensaje.addEventListener('input', validar);
 
-    formulario.addEventListener('submit', enviarEmail);
+    // formulario.addEventListener('submit', enviarEmail);
 
 
 
