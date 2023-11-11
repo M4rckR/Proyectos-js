@@ -8,6 +8,23 @@ function solution(frase) {
 }
 //console.log(solution(frase))
 
+// 2) Numero impares ordenados
 
-//
+
+const numeros =[9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
+function sortArray(arreglo) {
+    let arregloImpar = arreglo.filter(digito => digito%2 !== 0).sort(function (a,b) {return a-b}),
+        arregloFinal = [], indiceImpar = 0;
+    arreglo.forEach((numero) => {
+        if(numero%2 === 0){
+            arregloFinal.push(numero)
+            return
+        }
+        arregloFinal.push(arregloImpar[indiceImpar])
+        indiceImpar++
+    })
+    return arregloFinal
+}
+
+console.log(sortArray(numeros))
 
