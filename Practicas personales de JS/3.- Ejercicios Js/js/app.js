@@ -1,6 +1,6 @@
 
 // 1)Palabras separadas por camel case
-const frase = "agenEstaEnamoradoDeUnaAmiga"
+//+const frase = "agenEstaEnamoradoDeUnaAmiga"
 function solution(frase) {
     let fraseR = [];
     [...frase].forEach(letra => { letra === letra.toLowerCase()? fraseR.push(letra): fraseR.push(" ", letra)})
@@ -9,9 +9,7 @@ function solution(frase) {
 //console.log(solution(frase))
 
 // 2) Numero impares ordenados
-
-
-const numeros =[9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
+//const numeros =[9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
 function sortArray(arreglo) {
     let arregloImpar = arreglo.filter(digito => digito%2 !== 0).sort(function (a,b) {return a-b}),
         arregloFinal = [], indiceImpar = 0;
@@ -25,6 +23,18 @@ function sortArray(arreglo) {
     })
     return arregloFinal
 }
+//console.log(sortArray(numeros))
 
-console.log(sortArray(numeros))
+// 3) Letras en orden
 
+let frase = 'ABBCcAD'
+
+var uniqueInOrder=function(iterable){
+    let code = []
+    iterable.forEach(numero => {
+        code.push(numero.charCodeAt())
+    })
+    return code
+}
+
+console.log(uniqueInOrder(fras  e))
