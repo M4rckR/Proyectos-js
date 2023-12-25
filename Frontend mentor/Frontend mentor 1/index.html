@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
+  <title>Frontend mentor</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-m-light-blue min-h-[100vh] ">
+  <div class="container mx-auto flex justify-center">
+    <article class="max-w-[25rem] md:max-w-[50rem] my-6 mx-4 md:mx-0 rounded-xl bg-white flex flex-col md:flex-row md:h-auto md:mt-32">
+      <picture class="w-full h-full">
+        <img class="rounded-t-xl w-full h-full object-cover md:rounded-none md:rounded-tl-lg md:rounded-bl-lg" src="images/drawers.jpg" alt="imagen muebles">
+      </picture>
+      <div class="mt-8 md:mt-0 flex flex-col md:justify-center md:p-10 md:gap-4">
+        <h3 class="text-lg font-bold text-m-dark-blue px-8 md:px-0 md:text-xl">Shift the overall look and feel by adding these wonderful touches to furniture in your home</h3>
+        <p class=" text-m-dark-blue mt-4 text-sm px-8 md:px-0 md:mt-0"> Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting. I’ve got some simple tips to help you make any room feel complete.   </p> 
+        <div class="mt-8 flex flex-row relative overflow-hidden pb-[4.3rem] md:mt-0 md:pb-0 md:overflow-visible">
+          <!-- Primer slide --> 
+          <div id="primer-slide" class=" bg-white flex items-center gap-4 px-8 pb-2   absolute w-full transition-transform transform md:px-0">
+            <picture class="w-1/6">
+              <img class="rounded-full" src="images/avatar-michelle.jpg" alt="imagen persona">
+            </picture>
+            <div class="w-4/6">
+              <p class="font-bold text-m-dark-blue">Michelle Appleton</p>
+              <p class="text-m-des-blue">28 Jun 2020</p>
+            </div>
+            <picture>
+              <img id="compartir" class="bg-m-light-blue p-2 inline-block rounded-full cursor-pointer" src="images/icon-share-dark.svg" alt="share">
+            </picture>
+          </div>
+
+
+          <!-- Segundo slide -->
+          <div id="segundo-slide" class="bg-m-dark-blue  flex items-center px-8 py-5 rounded-b-lg gap-4  absolute w-full  -translate-x-full transition-transform transform  md:relative md:translate-x-64 md:-translate-y-14 md:w-60 md:rounded-xl md:px-8 md:justify-between md:py-4 md:before:block md:before:absolute md:before:bg-red-500 md:before:h-6 md:before:w-6 md:before:left-1/2 md:before:-translate-x-1/2 md:before:top-10 ">
+            <p class="text-m-gra-blue  tracking-widest">SHARE</p>
+            <div class="flex gap-4 ">
+              <a href="">
+                <img src="images/icon-facebook.svg" alt="red social">
+              </a>
+              <a href="">
+                <img src="images/icon-twitter.svg" alt="red social">
+              </a>
+              <a href="">
+                <img src="images/icon-pinterest.svg" alt="red social">
+              </a>
+            </div>
+            <button id="compartir-2" class="ml-auto md:hidden">
+              <img class="bg-m-des-blue  p-2 inline-block  rounded-full" src="images/icon-share.svg" alt="share">
+            </button>
+          </div>
+      </div>
+    </article>
+  </div>
+  
+  <script src="js/app.js"></script>
+</body>
+</html>
+
