@@ -1,7 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./*.html"],
+  content: ["./*.html", "./js/*.js"],
   theme: {
+    clipPath: {
+      triangulo: "polygon(50% 50%, 0 0, 100% 0);",
+    },
     extend: {
       colors : {
         "m-dark-blue" : "hsl(217, 19%, 35%)",
@@ -11,6 +14,8 @@ export default {
       }
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-clip-path'),
+  ],
 }
 
